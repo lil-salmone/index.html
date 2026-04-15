@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head></head>
+  <body>
+    <div class="theme-switch">
+      <button id="theme-toggle">🌙 dark mode</button>
+    </div>
+    <header>
+      <img
+        src="https://mail.google.com/mail/u/0/?ui=2&amp;ik=f648058dcb&amp;attid=0.1&amp;permmsgid=msg-a:r-684240344769137526&amp;th=19d2e6655fc31779&amp;view=fimg&amp;realattid=ii_mn8mzn6d0&amp;disp=thd&amp;attbid=ANGjdJ8Mzf5-5U8_h7uH8aM_qaKE2bJPGNAFCCMfjwIeXsJ6onHWj0A8shPxbX_VdaWT2P1mpLoie__0FCrPoIRu9UOOPZlFNiULgPdUmIzWLmBM95UWeQ_8TfajnxA&amp;ats=2524608000000&amp;sz=w1920-h927&amp;auditContext=forDisplay"
+        alt="Foto Profilo di viola"
+        class="profile-img"
+      />
+      <h1>@misacted_toy</h1>
+      <p>art lover | whimsy diyer</p>
+    </header>
+    <main class="container">
+      <a
+        href="https://www.instagram.com/misacted_toy?igsh=Ym5xaHFqNmg0cmhl&amp;utm_source=qr"
+        target="_blank"
+        rel="noopener"
+        class="btn"
+      >
+        <i class="fab fa-instagram"></i>
+        | personal istagram
+      </a>
+      <a
+        href="https://www.instagram.com/salmone_diy?igsh=aDI0ZjI2cHRqbnU%3D&amp;utm_source=qr"
+        target="_blank"
+        rel="noopener"
+        class="btn"
+      >
+        <i class="https://www.instagram.com/salmone_diy?igsh=aDI0ZjI2cHRqbnU%3D&amp;utm_source=qr"></i>
+        | my arts and crafts
+      </a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener" class="btn">
+        <i class="http://www.linkedin.com/in/viola-baselice-b3595a24a"></i>
+        | linkedin
+      </a>
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdCIG3XImlQ6YzgCMPSeaS6Cs-0n9JnpmCvsrdyS2ovvCa6Ow/viewform?usp=dialog"
+        class="btn"
+      >
+        <i class="fas fa-envelope"></i>
+        | how to contact me :)
+      </a>
+      <a href="http://boxd.it/5gfVJ" target="_blank" rel="noopener" class="btn">
+        <i class="http://boxd.it/5gfVJ"></i>
+        | letterboxd
+      </a>
+      <a
+        href="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3ZsazdrOWtieWI5dm1yNTRrZnBmb3lnODNhNzg5aDB1emVsdDQ1aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fFa05KbZowXiEIyRse/giphy.gif"
+        target="_blank"
+        rel="noopener"
+        class="btn"
+      >
+        <i
+          class="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3ZsazdrOWtieWI5dm1yNTRrZnBmb3lnODNhNzg5aDB1emVsdDQ1aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fFa05KbZowXiEIyRse/giphy.gif"
+        ></i>
+        | feeling gloomy?
+      </a>
+      <div class="image"></div>
+    </main>
+    <footer>
+      <p>created with 💗 by viola</p>
+    </footer>
+  </body>
+</html>
+
+
+
+CSS
+
+/* 1. CONFIGURAZIONE GENERALE */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-size: 18px;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 40px 20px;
+margin: 4em 2em;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-color:#000000;
+  background-image:url(https://i.pinimg.com/originals/20/4f/d7/204fd764e8d45ad07ac701bba3235099.jpg);
+}
+/* 2. STILE INTESTAZIONE */
+.profile-img {
+width: 200px;
+height: 200px;
+border-radius: 50%; /* Immagine tonda */
+border: 4px solid white;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+h1 {
+margin: 15px 0 5px;
+font-size: 22px;
+color: #8f1eae; /*misacted toy*/
+}
+p {
+margin: 15px 0 5px;
+font-size: 22px;
+color: #2b0934; /*art lover whimsy diyer created by*/
+}
+/* 3. IL CONTENITORE DEI BOTTONI */
+.container {
+width: 100%;
+max-width: 420px; /* Larghezza ottimale smartphone */
+margin-top: 30px;
+}
+.btn {
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #edbcf6; /*sfondo bottoni*/
+color: #2b0934; /*bottoni*/
+text-decoration: none; /* Rimuove sottolineatura */
+padding: 18px;
+margin-bottom: 12px;
+
+border-radius: 100px; /* Angoli arrotondati */
+font-weight: 500;
+transition: all 0.3s ease; /* Animazione fluida */
+box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.btn i {
+margin-right: 12px; /* Spazio tra icona e testo */
+font-size: 1.3rem;
+}  
+/* 4. EFFETTO HOVER: L'anima del sito */
+.btn:hover {
+background-color: #5ce1e6; /* Cambia colore al passaggio mouse */
+color: white;
+transform: translateY(-3px); /* Si solleva leggermente */
+box-shadow: 0 6px 15px rgba(52, 152, 219, 0.3);
+}
+/*bottone mode*/
+button {
+  margin-top:10px;
+  margin-bottom: 10px;
+  padding: 8px 15px;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  background-color: #edbcf6; /*sfondo bottoni*/
+color: #2b0934; /*bottoni*/
+  }
+/* 5. modalità notte giorno*/
+body.dark-mode {
+background-image:url(https://i.pinimg.com/736x/64/5f/83/645f83110b42a58eb921870f8a7869e3.jpg); /* Testo bianco */
+  color: #ffffff; /* Testo bianco */
+ .btn:hover {
+background-color: #00167a; /* Cambia colore al passaggio mouse */
+color: white;
+transform: translateY(-3px); /* Si solleva leggermente */
+box-shadow: 0 6px 15px rgba(52, 152, 219, 0.3);
+}
+  h1 {
+ margin: 15px 0 5px;
+ font-size: 22px;
+ color: #2c0a85; /*misacted toy*/
+ }
+ p {
+ margin: 15px 0 5px;
+ font-size: 22px;
+ color: #FFF; /*art lover whimsy diyer created by*/
+ }
+ button {
+ background-color: #2c0a85; /*sfondo bottoni*/
+ color: #FFF; /*bottoni*/
+ }
+}
+body.dark-mode .btn {
+ background-color: #401268;
+ color: #FFF;
+ border: 1px solid #555;
+ }
+
+
+
+const pulsante = document.getElementById('theme-toggle');
+const corpo = document.body;
+pulsante.addEventListener('click', () => {
+  corpo.classList.toggle('dark-mode');
+  if(corpo.classList.contains('dark-mode')){
+    pulsante.innerText = "☀️ light mode";
+    } else {
+      pulsante.innerText = "🌙 dark mode";
+    } 
+  });
+/*alert("⊹₊˚‧︵‿₊୨ welcome to my linktree! ୧₊‿︵‧˚₊⊹")
